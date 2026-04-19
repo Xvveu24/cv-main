@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Mail</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+
+    /* HEADER */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .logo img {
+      width: 28px;
+    }
+
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: #555;
+    }
+
+    .user img {
+      width: 30px;
+      border-radius: 50%;
+    }
+
+
+    .body {
+      display: flex;
+    }
+
+  
+    .sidebar {
+      width: 140px;
+      background: #fff;
+      border-right: 1px solid #ddd;
+      min-height: calc(100vh - 49px);
+      flex-shrink: 0;
+    }
+
+    .nav-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 16px;
+      font-size: 13px;
+      color: #333;
+      cursor: pointer;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .nav-item.active {
+      background: #e8f0fe;
+      color: #1a56db;
+    }
+
+    .nav-item:hover {
+      background: #f5f5f5;
+    }
+
+    .nav-item img {
+      width: 18px;
+    }
+
+  
+    .mails {
+      flex: 1;
+      background: #fff;
+      margin: 0;
+    }
+
+    .mail-row {
+      display: flex;
+      align-items: center;
+      padding: 10px 16px;
+      border-bottom: 1px solid #f0f0f0;
+      font-size: 13px;
+      gap: 10px;
+      cursor: pointer;
+    }
+
+    .mail-row:hover {
+      background: #f9f9f9;
+    }
+
+    .star img {
+      width: 16px;
+    }
+
+    .sender {
+      width: 120px;
+      font-weight: bold;
+      flex-shrink: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .subject {
+      font-weight: bold;
+      flex: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .preview {
+      color: #888;
+      flex: 2;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .attach img {
+      width: 14px;
+    }
+
+    .date {
+      font-size: 12px;
+      color: #888;
+      flex-shrink: 0;
+      width: 50px;
+      text-align: right;
+    }
+
+
+    @media (min-width: 550px) and (max-width: 799px) {
+      .sidebar {
+        width: 110px;
+      }
+
+      .preview {
+        display: none;
+      }
+
+      .mail-row {
+        flex-wrap: wrap;
+      }
+
+      .subject {
+        width: 100%;
+        flex: none;
+      }
+    }
+
+    @media (max-width: 549px) {
+      .sidebar {
+        width: 50px;
+      }
+
+      .nav-item span {
+        display: none;
+      }
+
+      .nav-item {
+        justify-content: center;
+        padding: 12px 0;
+      }
+
+      .preview {
+        display: none;
+      }
+
+      .sender {
+        width: 80px;
+        font-size: 12px;
+      }
+
+      .subject {
+        font-size: 12px;
+      }
+
+      .date {
+        font-size: 11px;
+      }
+
+      .mail-row {
+        flex-wrap: wrap;
+        padding: 8px 10px;
+      }
+
+      .subject {
+        width: 100%;
+        flex: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo">
+      <img src="icons_hw/mail.png" alt="mail">
+      MY MAIL
+    </div>
+    <div class="user">
+      user@mymail.com
+      <img src="icons_hw/account.png" alt="user">
+    </div>
+  </div>
+
+  <div class="body">
+    <nav class="sidebar">
+      <div class="nav-item active">
+        <img src="icons_hw/incom.png" alt=""><span>Incoming</span>
+      </div>
+      <div class="nav-item">
+        <img src="icons_hw/outcom.png" alt=""><span>Outgoing</span>
+      </div>
+      <div class="nav-item">
+        <img src="icons_hw/draft.png" alt=""><span>Drafts</span>
+      </div>
+      <div class="nav-item">
+        <img src="icons_hw/spam.png" alt=""><span>Spam</span>
+      </div>
+    </nav>
+
+    <div class="mails">
+      <div class="mail-row">
+        <div class="star"><img src="icons_hw/star2.svg" alt=""></div>
+        <div class="sender">me, Alex</div>
+        <div class="subject">Trip to South America</div>
+        <div class="preview">Suspendisse ut sapien non arcu rutrum t...</div>
+        <div class="attach"><img src="icons_hw/attach_26.png" alt=""></div>
+        <div class="date">12 apr.</div>
+      </div>
+      <div class="mail-row">
+        <div class="star"><img src="icons_hw/star2.svg" alt=""></div>
+        <div class="sender">me, John</div>
+        <div class="subject">Santa Monica trip</div>
+        <div class="preview">Cras accumsan lacus quis urna ultricies, vel fini...</div>
+        <div class="attach"><img src="icons_hw/attach_26.png" alt=""></div>
+        <div class="date">12 apr.</div>
+      </div>
+      <div class="mail-row">
+        <div class="star"><img src="icons_hw/star2.svg" alt=""></div>
+        <div class="sender">me, John, Alex</div>
+        <div class="subject">Birthday party</div>
+        <div class="preview">20.04.2019</div>
+        <div class="attach"></div>
+        <div class="date">11 apr.</div>
+      </div>
+      <div class="mail-row">
+        <div class="star"><img src="icons_hw/star1.svg" alt=""></div>
+        <div class="sender">Mari White</div>
+        <div class="subject">Report (march 2019)</div>
+        <div class="preview"></div>
+        <div class="attach"></div>
+        <div class="date">10 apr.</div>
+      </div>
+      <div class="mail-row">
+        <div class="star"><img src="icons_hw/star2.svg" alt=""></div>
+        <div class="sender">me, Elena</div>
+        <div class="subject">Duis semper augue</div>
+        <div class="preview">Nunc finibus sem vel odio mattis</div>
+        <div class="attach"><img src="icons_hw/attach_26.png" alt=""></div>
+        <div class="date">10 apr.</div>
+      </div>
+      <div class="mail-row">
+        <div class="star"><img src="icons_hw/star2.svg" alt=""></div>
+        <div class="sender">Bill, John</div>
+        <div class="subject">Ut congue purus</div>
+        <div class="preview">Ut sit amet eros hendrerit, posuere arcu sed, v...</div>
+        <div class="attach"></div>
+        <div class="date">5 apr.</div>
+      </div>
+      <div class="mail-row">
+        <div class="star"><img src="icons_hw/star2.svg" alt=""></div>
+        <div class="sender">Stive</div>
+        <div class="subject">Phasellus quis velit tincidunt</div>
+        <div class="preview"></div>
+        <div class="attach"></div>
+        <div class="date">1 apr.</div>
+      </div>
+      <div class="mail-row">
+        <div class="star"><img src="icons_hw/star1.svg" alt=""></div>
+        <div class="sender">Mari White</div>
+        <div class="subject">Report (february 2019)</div>
+        <div class="preview"></div>
+        <div class="attach"><img src="icons_hw/attach_26.png" alt=""></div>
+        <div class="date">10 mar.</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
