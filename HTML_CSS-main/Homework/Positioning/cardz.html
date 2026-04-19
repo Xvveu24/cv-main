@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Cards</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #1c1c1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.grid {
+    display: flex;
+    gap: 15px;
+    max-width: 900px;
+}
+
+.card {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    transition: 0.4s ease;
+    filter: brightness(0.8);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    color: white;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.overlay h3 {
+    margin: 0 0 6px;
+    font-size: 16px;
+    color: #e0c084;
+}
+
+.overlay p {
+    margin: 0;
+    font-size: 13px;
+    color: #ccc;
+}
+
+.card:hover img {
+    transform: scale(1.07);
+    filter: brightness(1);
+}
+
+.card:hover .overlay {
+    transform: translateY(0);
+    opacity: 1;
+}
+</style>
+
+</head>
+<body>
+
+<div class="grid">
+
+    <div class="card">
+        <img src="imgs/Anne_Hathaway.jpg" alt="">
+        <div class="overlay">
+            <h3>Anne Hathaway</h3>
+            <p>Короткий опис акторки</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="imgs/Dickens_Gurney.jpg" alt="">
+        <div class="overlay">
+            <h3>Charles Dickens</h3>
+            <p>Відомий англійський письменник</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="imgs/Oscar_Wilde_Sarony.jpg" alt="">
+        <div class="overlay">
+            <h3>Oscar Wilde</h3>
+            <p>Майстер афоризмів і драматург</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

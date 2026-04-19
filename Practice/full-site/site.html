@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>skibinews</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #eef2f7;
+    color: #111;
+}
+
+.wrapper {
+    max-width: 1200px;
+    min-width: 600px;
+    margin: 0 auto;
+}
+
+header {
+    background: #0f172a;
+    color: white;
+}
+
+.header-inner {
+    max-width: 1200px;
+    min-width: 600px;
+    margin: 0 auto;
+    padding: 18px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: #cbd5e1;
+    margin-left: 16px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+    padding: 24px;
+}
+
+article {
+    flex: 3;
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+}
+
+article h1 {
+    font-size: 26px;
+    margin-bottom: 6px;
+}
+
+.meta {
+    font-size: 13px;
+    color: #6b7280;
+    margin-bottom: 12px;
+}
+
+.main-img {
+    width: 100%;
+    height: 240px;
+    height: auto;
+    border-radius: 10px;
+    margin: 14px 0;
+}
+
+article p {
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+h2 {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.highlight {
+    background: #f1f5f9;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 6px;
+}
+
+aside {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.box {
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.box h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.event {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.event:last-child {
+    border-bottom: none;
+}
+
+.date {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.quote {
+    font-style: italic;
+    color: #374151;
+    line-height: 1.5;
+}
+
+.tag {
+    display: inline-block;
+    font-size: 12px;
+    background: #e2e8f0;
+    padding: 4px 8px;
+    border-radius: 6px;
+    margin-right: 6px;
+    margin-top: 8px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+        <div class="logo">100% TRUE NEWS</div>
+        <nav>
+            <a href="#">Головна</a>
+            <a href="#">Новини</a>
+            <a href="#">Аналітика</a>
+            <a href="#">Події</a>
+            <a href="#">Контакти</a>
+        </nav>
+    </div>
+</header>
+
+<div class="wrapper">
+    <div class="content">
+
+        <article>
+            <h1>Технології майбутнього: як змінюється світ</h1>
+            <div class="meta">16 квітня 2026 • редакційна стаття</div>
+
+            <span class="tag">технології</span>
+            <span class="tag">інновації</span>
+            <span class="tag">суспільство</span>
+
+            <img class="main-img" src="/Practice/full-site/ai-article-1-banner-shot-min.jpg" alt="main image,ai">
+
+            <p>
+                Світ переживає період стрімких змін, де технології стають головним двигуном розвитку.
+                Від штучного інтелекту до роботизованих систем — усе це вже частина нашого повсякденного життя.
+            </p>
+
+            <h2>Штучний інтелект</h2>
+            <p>
+                Системи машинного навчання здатні аналізувати великі обсяги даних і приймати рішення,
+                які раніше були доступні лише людині.
+            </p>
+
+            <div class="highlight">
+                Автоматизація змінює ринок праці та спосіб роботи людей.
+            </div>
+
+            <h2>Робототехніка</h2>
+            <p>
+                Роботи вже використовуються у медицині, промисловості та навіть у побуті.
+                Вони виконують складні та небезпечні завдання замість людини.
+            </p>
+
+            <h2>Майбутнє</h2>
+            <p>
+                Найближчі роки покажуть, як швидко суспільство зможе адаптуватися до нових умов
+                та інтегрувати технології у всі сфери життя.
+            </p>
+        </article>
+
+        <aside>
+
+            <div class="box">
+                <h3>Події</h3>
+
+                <div class="event">
+                    <strong>IT конференція 2026</strong>
+                    <div class="date">18 квітня</div>
+                </div>
+
+                <div class="event">
+                    <strong>Форум інновацій</strong>
+                    <div class="date">22 квітня</div>
+                </div>
+
+                <div class="event">
+                    <strong>AI Expo</strong>
+                    <div class="date">25 квітня</div>
+                </div>
+
+                <div class="event">
+                    <strong>Startup Day</strong>
+                    <div class="date">30 квітня</div>
+                </div>
+            </div>
+
+            <div class="box quote">
+                “Майбутнє не можна передбачити — його можна лише створити.”
+            </div>
+
+            <div class="box">
+                <h3>Популярне</h3>
+                <div class="event">Як AI змінює освіту</div>
+                <div class="event">Роботи в медицині</div>
+                <div class="event">Технології 2030</div>
+            </div>
+
+        </aside>
+
+    </div>
+</div>
+
+</body>
+</html>

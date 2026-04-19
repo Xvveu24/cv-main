@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Вкладки</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background: #f0f0f0;
+        }
+
+        .page {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        nav {
+            width: 120px;
+            background: #f0f0f0;
+        }
+
+        nav a {
+            display: block;
+            padding: 14px 16px;
+            text-decoration: none;
+            color: #d4d4d4;
+            font-size: 14px;
+            border-bottom: 1px solid #aaa;
+            background: #686666;
+        }
+
+        nav a:hover {
+            background: #8a8a8a;
+            color: #fff;
+
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+            background: #383535;
+        }
+
+        .tab {
+            display: none;
+            gap: 20px;
+
+        }
+
+        #tab1:target,
+        #tab2:target,
+        #tab3:target {
+            display: flex;
+        }
+
+        #tab1 {
+            display: flex;
+        }
+
+        .block {
+            flex: 1;
+        }
+
+        .block img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .block h3 {
+            margin: 10px 0 6px;
+            font-size: 15px;
+            color: #f0f0f0
+        }
+
+        .block p {
+            font-size: 13px;
+            line-height: 1.5;
+            color: #d4d4d4;
+        }
+
+        .selected {
+            background-color: #383535;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page">
+        <nav>
+            <a href="#tab1" class="selected">Tab 1</a>
+            <a href="#tab2">Tab 2</a>
+            <a href="#tab3">Tab 3</a>
+        </nav>
+
+        <div class="content">
+
+            <div id="tab1" class="tab">
+
+                <div class="block">
+                    <img src="./materials/350x220.png">
+                    <h3>Header 1</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse omnis perspiciatis, id eum et
+                        possimus ipsum vero cumque recusandae dignissimos eveniet, molestias perferendis nam praesentium
+                        harum sint magni eaque alias! Adipisci nostrum, vitae maxime eos dolor nihil fuga alias
+                        temporibus, reiciendis voluptatem molestias voluptates distinctio ullam quia debitis, ut nam
+                        dignissimos ab numquam repellendus iusto animi. Enim illo impedit, quas, non fugiat hic ipsam
+                        aut nihil dignissimos a, aspernatur quisquam. Cupiditate expedita numquam harum obcaecati
+                        commodi, accusamus distinctio architecto eum necessitatibus, molestiae debitis quis nostrum
+                        repellendus cumque eius minus nisi perspiciatis consequuntur. Animi accusantium repellendus
+                        atque harum, hic nisi maiores nesciunt assumenda dicta laboriosam reprehenderit vitae alias
+                        voluptate error eos voluptatem molestias officia corporis eaque illo commodi adipisci illum! Sit
+                        aliquam iure quidem ex, voluptate nulla deleniti adipisci obcaecati dolores ut, mollitia ullam
+                        optio dolorem iste iusto natus tenetur dignissimos omnis. Ut architecto omnis at error aliquam
+                        natus dignissimos quia dolore impedit. Dignissimos nihil perspiciatis hic est impedit corporis
+                        tempore debitis commodi suscipit! Consequuntur similique excepturi, accusantium nesciunt ad
+                        eaque minus aliquid repellat voluptatum veniam dolores.</p>
+                </div>
+
+                <div class="block">
+                    <img src="./materials/350x220.png">
+                    <h3>Header 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam deserunt natus officiis saepe
+                        itaque sequi optio amet in consequuntur iure culpa suscipit cum aspernatur quis, totam inventore
+                        ad praesentium dolorem? Quis vitae cum odio dicta cumque quae repellendus iure inventore,
+                        temporibus ratione deleniti, necessitatibus laborum eos modi reprehenderit, voluptatum unde.
+                        Fugit est debitis ipsam rem. Magnam, doloribus, odio at tempora quia similique doloremque itaque
+                        porro ad dicta pariatur placeat? Suscipit, modi excepturi! Velit ducimus ex, veritatis atque
+                        quae magni modi eveniet. Odit sapiente iure rem corporis quas iusto dolores veritatis eum quasi,
+                        officia alias porro. Perspiciatis voluptatem sapiente itaque, placeat esse quos id nihil
+                        praesentium. Placeat nihil fugiat quidem cum eaque, ex nostrum adipisci, architecto dolorum est
+                        delectus dignissimos sit voluptatum asperiores corporis, obcaecati exercitationem.</p>
+                </div>
+
+                <div class="block">
+                    <img src="./materials/350x220.png">
+                    <h3>Header 3</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque ratione officia adipisci laborum
+                        quasi natus dignissimos asperiores. Nesciunt amet beatae voluptate impedit ipsa explicabo
+                        molestias corrupti! Excepturi veniam pariatur ipsa provident, voluptates harum mollitia quod
+                        quam, quisquam perspiciatis odit labore esse unde commodi sapiente minus doloremque. Pariatur
+                        sunt quisquam vitae, hic, assumenda labore commodi quidem distinctio unde in praesentium eius ea
+                        voluptas ducimus laborum laudantium deleniti optio non ut. Possimus numquam inventore
+                        consequuntur perferendis rem dignissimos est beatae unde reiciendis ipsa! Placeat tempore libero
+                        illum officia nam, rerum recusandae possimus obcaecati similique voluptatibus ea dignissimos at
+                        sed? Sed quasi harum aspernatur architecto, pariatur itaque inventore, impedit obcaecati et
+                        sequi vitae modi iste optio dolorum consequuntur quaerat vero rem! Facilis fugiat nostrum quae,
+                        nesciunt eius ab dolorem voluptate odit optio consectetur non magni nisi assumenda itaque
+                        aspernatur mollitia soluta. Quaerat ratione aliquid sed ab nemo nisi pariatur veritatis
+                        laudantium eligendi? Molestias, accusantium dolor blanditiis animi exercitationem porro commodi
+                        omnis in labore aspernatur non voluptatibus dicta numquam eius nobis ex fuga veritatis. Mollitia
+                        nihil neque unde aperiam, consectetur eum ad.</p>
+                </div>
+
+
+
+            </div>
+
+</body>
+
+</html>

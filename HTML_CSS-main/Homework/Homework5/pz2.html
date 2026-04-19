@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Live Icon</title>
+  <style>
+    * { box-sizing: 
+     border-box; margin: 0; 
+     padding: 0; 
+    }
+
+    body {
+     display: flex; 
+     justify-content: center; 
+     align-items: center; 
+     height: 100vh; 
+     background: #f0f0f0; 
+   }
+
+    img {
+      width: 80px;
+      height: 80px;
+      filter: grayscale(100%);
+      transition: width 0.5s, height 0.5s, filter 0.4s;
+    }
+
+    img:hover {
+      width: 200px;
+      height: 200px;
+      filter: grayscale(10%);
+    }
+
+  </style>
+</head>
+
+<body>
+  <img src="favorites.png" alt="icon">
+</body>
+
+</html>

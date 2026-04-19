@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #e45d44;
+    }
+
+    .login {
+     
+      top: 110px;
+      left: 670px;
+      width: 360px;
+      background: #e6e4e4;
+      
+      padding: 16px 18px;
+      /* box-shadow: 5px 5px  black; */
+      text-align: center;
+
+    
+
+    }
+
+    p {
+        background-color: transparent;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight:bolder;
+        font-size: larger;
+    }
+
+    input{
+        background-color: #ffffff;
+        text-align: center;
+        border: 0px;
+        padding: 16px 60px;
+        font-weight: bold;
+        
+    }
+
+    .button{
+        
+        background-color: #32a75a;
+        text-align: center;
+        border: 0px;
+        padding: 16px 130px;
+        font-weight: bold;
+        color:#ffffff;
+        box-shadow: 1px 3px 5px #006d21;
+        transition: background-color 0.3s ease;
+        
+        
+    }
+
+    .button:hover{
+        background-color: #35b85c;
+    }
+
+    .forgot{
+        font-size: small;
+        font-weight: 600;
+        color:#e25c43;
+    }
+
+    .forgot:hover{
+        text-decoration:underline;
+    }
+    
+
+
+
+   
+    </style>
+</head>
+<body>
+
+   <div class="login">
+    <p> Member Login</p>
+
+    
+    <input type="text" id="username" name="username" placeholder="Username">
+    <br>
+    <br>
+    <input type="password" id="password" name="password" placeholder="Password">
+    <br>
+    <br>
+    <input type="submit" class="button" value="Login" name="login" id="login">
+    <br>
+    <br>
+    <p class="forgot"> Forgot password? </p>
+    </div>
+
+    <p> ...or login with:</p>
+
+
+    
+</body>
+</html>

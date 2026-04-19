@@ -1,0 +1,96 @@
+/*
+    selector {
+        property-name: property-value;
+    }
+*/
+
+/* Сброс и базовые стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color убран отсюда — это и вызывало чёрный фон на заголовках */
+}
+
+body {
+    background-color: #0f0f1a;
+    color: #e0e0e0;
+    font-family: 'Merriweather', Georgia, serif;
+    max-width: 860px;
+    margin: 50px auto;
+    padding: 0 30px;
+    line-height: 1.8;
+}
+
+/* Заголовки */
+#h1 {
+    color: #e2b96f;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    border-bottom: 2px solid #e2b96f;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #7ec8e3;
+    font-family: Cambria, Georgia, serif;
+    font-size: 1.4em;
+    margin: 16px 0 8px;
+}
+
+#h3 {
+    color: #a8e6cf;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+    text-decoration: underline;
+    margin: 12px 0 6px;
+}
+
+/* Параграфы */
+#font-style1 {
+    color: #d0d0d0;
+    font-family: Georgia, serif;  /* заменил Impact — он слишком жирный */
+    font-size: 1em;
+    text-align: justify;
+    margin-bottom: 16px;
+}
+
+#font-style {
+    color: #555;
+    font-size: 0.9em;
+    letter-spacing: 0.2em;
+    margin: 8px 0;
+}
+
+#font-style2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1em;
+    font-style: italic;
+    font-variant: small-caps;
+    line-height: 1.6;
+    color: #ffffff;
+    text-transform: capitalize;
+    text-indent: 2em;
+}
+
+#p {
+    color: #aaa;
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+/* div — убрал brown, сделал аккуратно */
+div {
+    background-color: #1e1e2e;
+    border-left: 4px solid #e2b96f;
+    padding: 14px 18px;
+    border-radius: 4px;
+    margin-top: 16px;
+}
+
+/* Вспомогательные классы */
+.bg-green { background-color: #1a2a1a; }
+.color-blue { color: #7ec8e3; }
+
+ol { list-style: decimal; padding-left: 20px; }

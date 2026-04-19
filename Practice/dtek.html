@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+            font-family: sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+
+        table, td, th {
+            border: 1px solid #999;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            padding: 5px 1px;
+        }
+
+        thead {
+            background-color: #488b9e;
+            color: white;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #dceef2;
+        }
+
+        table {
+            margin: 20px 0;
+        }
+
+        td:first-child {
+            text-align: center;
+        }
+
+        img {
+            width:10%
+        }
+
+
+    
+    </style>
+</head><!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Графік відключень</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        td, th {
+            border: 1px solid #999;
+            padding: 4px 6px;
+            text-align: center;
+            font-size: 12px;
+            min-width: 32px;
+        }
+
+        thead th {
+            background-color: #488b9e;
+            color: white;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            height: 60px;
+        }
+
+        thead th:first-child {
+            writing-mode: horizontal-tb;
+            transform: none;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #dceef2;
+        }
+
+        td:first-child {
+            text-align: left;
+            font-weight: bold;
+            padding: 4px 10px;
+            white-space: nowrap;
+        }
+
+        td.off { 
+         background-color: #c8c8c8; 
+        }
+
+        td.on  { 
+         background-color: white; 
+        }
+
+        td.off img { 
+         opacity: 0.5; 
+        }
+
+        img { 
+         width: 18px; 
+         height: 18px; 
+        }
+
+        .legend {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            font-size: 13px;
+            margin-top: 10px;
+        }
+
+        .legend-item { 
+         display: flex; 
+         align-items: center; 
+         gap: 6px; 
+        }
+
+        .box { 
+         width: 20px; 
+         height: 20px; 
+         border: 1px solid #999; 
+        }
+
+        .box.on  { 
+         background: white; 
+        }
+
+        .box.off { 
+         background: #c8c8c8; 
+        }
+    </style>
+</head>
+<body>
+
+
+
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th>00:00</th>
+            <th>01:00</th>
+            <th>02:00</th>
+            <th>03:00</th>
+            <th>04:00</th>
+            <th>05:00</th>
+            <th>06:00</th>
+            <th>07:00</th>
+            <th>08:00</th>
+            <th>09:00</th>
+            <th>10:00</th>
+            <th>11:00</th>
+            <th>12:00</th>
+            <th>13:00</th>
+            <th>14:00</th>
+            <th>15:00</th>
+            <th>16:00</th>
+            <th>17:00</th>
+            <th>18:00</th>
+            <th>19:00</th>
+            <th>20:00</th>
+            <th>21:00</th>
+            <th>22:00</th>
+            <th>23:00</th>
+        </tr>
+    </thead>
+    
+    <tbody>
+
+        
+        <tr>
+            <td>Понеділок</td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+        </tr>
+
+        
+        <tr>
+            <td>Вівторок</td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+        </tr>
+
+        
+        <tr>
+            <td>Середа</td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+        </tr>
+
+        
+        <tr>
+            <td>Четвер</td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+        </tr>
+
+        <tr>
+            <td>П'ятниця</td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+        </tr>
+
+        
+        <tr>
+            <td>Субота</td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+        </tr>
+
+        
+        <tr>
+            <td style="background:#e8c100;">Неділя</td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="on"></td>
+            <td class="off"><img src="turn-off_3342277.png"></td>
+            <td class="on"></td>
+        </tr>
+
+    </tbody>
+</table>
+
+<div class="legend">
+    <div class="legend-item"><div class="box on"></div> Світло є</div>
+    <div class="legend-item"><div class="box off"></div><img src="turn-off_3342277.png"> Світла немає</div>
+</div>
+
+</body>
+</html>
+
+<body>
+     <table class="hide-empty">
+        <thead>
+            <tr>
+                <th></th>
+                <th>00:00</th>
+                <th>Column 3</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td><img src="./turn-off_3342277.png"> </td>
+                <td>Wednesday</td>
+                <td>Thursday</td>
+                
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>Lorem ipsum, dolor sit amet consectetur adipisicing.</td>
+                <td></td>
+            </tr>
+        </tbody>
+
+       
+     
+    </table>
+
+    
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/./Lesson5/shared_resources/sharedImages/favicon-32x32.png">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1a1a2e;
+            color: #e0e0e0;
+            font-family: 'Inter', sans-serif;
+            padding: 30px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-family: 'Syne', sans-serif;
+            text-align: center;
+            font-size: 1.8em;
+            color: #9CD5FF;
+            margin-bottom: 24px;
+            letter-spacing: 0.02em;
+        }
+
+        /* ── animations box ── */
+        .animations {
+            width: 100%;
+            height: 500px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            border: 2px solid #2a3a5a;
+            border-radius: 12px;
+            background-color: #16213e;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .circle {
+            height: 50px;
+            width: 50px;
+            background-color: #9CD5FF;
+            border-radius: 50%;
+            position: absolute;
+            animation: circle-anim 2s linear infinite;
+            box-shadow: 0 0 16px #9CD5FF88;
+        }
+
+        @keyframes circle-anim {
+            0%   { transform: translate(0, 0); }
+            25%  { transform: translate(200px, 0); }
+            50%  { transform: translate(200px, 400px); }
+            75%  { transform: translate(0, 400px); }
+            100% { transform: translate(0, 0); }
+        }
+
+        /* ── transform box ── */
+        .transform-example {
+            margin: 0 0 20px 0;
+            padding: 20px 40px;
+            height: auto;
+            border: 2px solid #2a3a5a;
+            border-radius: 12px;
+            background-color: #16213e;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .square {
+            width: 50px;
+            height: 50px;
+            background-color: #7AAACE;
+            border-radius: 6px;
+            transition: all 2s ease 0s;
+            flex-shrink: 0;
+        }
+
+        .translate-example:hover { transform: translate(30px, 0px); }
+        .scale-example:hover     { transform: scale(1.6, 0.6); }
+        .rotate2d                { transform-origin: 100% 100%; }
+        .rotate2d:hover          { transform: rotateX(60deg); }
+        .rotate3dx:hover         { transform: rotateX(60deg); }
+        .rotate3dY:hover         { transform: rotateY(60deg); }
+        .rotate3dZ:hover         { transform: rotateZ(60deg); }
+
+        /* ── links ── */
+        p {
+            margin: 14px 0;
+            font-size: 0.95em;
+            color: #bbb;
+        }
+
+        a:link    { color: #9CD5FF; 
+        text-decoration: none; 
+    }
+        a:visited { color: #7AAACE; 
+        text-decoration: underline; 
+    }
+        a:focus   { color: #e2b96f; 
+        outline: none; 
+    }
+        a:hover   { text-decoration:
+        underline; 
+    }
+        a:active  { color: #f4a261; 
+        }
+
+        ul {
+            margin: 10px 0 10px 20px;
+        }
+
+        ul li {
+            margin-bottom: 4px;
+            color: #bbb;
+        }
+
+        /* ── image ── */
+        .img_container {
+            border: 2px solid #2a3a5a;
+            border-radius: 12px;
+            text-align: center;
+            padding: 16px;
+            margin: 16px 0;
+            background-color: #16213e;
+        }
+
+        img {
+            width: 10%;
+            height: auto;
+            border-radius: 15px;
+            transition: width 0.4s ease, box-shadow 0.4s ease, transform 0.6s ease;
+            transform-origin: center center;
+        }ы
+
+        img:hover {
+            width: 20%;
+            box-shadow: 0 0 20px rgba(156, 213, 255, 0.4);
+            transform: rotateY(180deg);
+        }
+
+        /* ── button ── */
+        .button {
+            width: 30%;
+            padding: 12px 0;
+            margin: 20px auto;
+            text-align: center;
+            background-color: #7AAACE;
+            border: 2px solid #7AAACE;
+            border-radius: 10px;
+            transition: all 0.8s cubic-bezier(0.15, 0.39, 0.38, 0.94);
+        }
+
+        .button:hover {
+            background-color: #355872;
+            border-color: #9CD5FF;
+        }
+
+        .button a {
+            background-color: transparent;
+            color: #1a1a2e;
+            font-weight: 700;
+            font-family: 'Syne', sans-serif;
+            font-size: 0.95em;
+            letter-spacing: 0.05em;
+        }
+
+        .button:hover a {
+            color: #9CD5FF;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1>Hyperlinks: The Connective Tissue of the Digital World</h1>
+
+    <div class="animations">
+        <div class="circle"></div>
+    </div>
+
+    <div class="transform-example">
+        <div class="translate-example square"></div>
+        <div class="scale-example square"></div>
+        <div class="rotate2d square"></div>
+        <div class="rotate3dx square"></div>
+        <div class="rotate3dY square"></div>
+        <div class="rotate3dZ square"></div>
+    </div>
+
+    <p>Гіперпосилання це <a href="https://en.wikibooks.org/wiki/MediaWiki_User_Guide/Hyperlinks">силка що введе на інший сайт</a></p>
+    <ul>
+        <li><a href="">Introduction</a></li>
+        <li><a href="">Introduction</a></li>
+        <li><a href="">Introduction</a></li>
+    </ul>
+
+    <div class="img_container">
+        <img id="img-id" src="../shared_resources/sharedImages/cat.jpeg">
+    </div>
+
+    <div class="button">
+        <a href="#">Press!!!</a>
+    </div>
+
+</body>
+</html>

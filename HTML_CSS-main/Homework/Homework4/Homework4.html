@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашнє завдання 1</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .fruits {
+            background-color: #e8909a;
+            padding: 20px;
+            width: 600px;
+        }
+
+        ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ol li {
+            background-color: #d4687a;
+            color: white;
+            font-weight: bold;
+            padding: 8px 10px;
+            margin-bottom: 8px;
+        }
+
+        ol li span {
+            background-color: #a33050;
+            padding: 4px 10px;
+        }
+
+        table {
+            width: 300px;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 6px 10px;
+            border: 1px solid #ccc;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #d0e8ff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+
+        tr.completed td {
+            text-decoration: line-through;
+            color: #999;
+        }
+
+        .panda-list {
+            padding-left: 20px;
+        }
+
+        .panda-list li {
+            background-color: transparent;
+            margin-bottom: 6px;
+            padding: 0;
+            font-weight: normal;
+            color: black;
+        }
+
+        .text-bold { font-weight: bold; }
+        .text-italic { font-style: italic; }
+        .text-red { color: red; }
+    </style>
+</head>
+<body>
+
+    <h1>Домашнє завдання 1</h1>
+
+    <h2>Завдання 1</h2>
+    <div class="fruits">
+        <ol>
+            <li>1. <span>Apple</span></li>
+            <li>2. <span>Orange</span></li>
+            <li>3. <span>Pineapple</span></li>
+            <li>4. <span>Pear</span></li>
+            <li>5. <span>Cherry</span></li>
+        </ol>
+    </div>
+
+    <h2>Завдання 2</h2>
+    <table>
+        <caption>My To Do List</caption>
+        <tr>
+            <td><input type="checkbox" checked></td>
+            <td>Hit the gym</td>
+        </tr>
+        <tr class="completed">
+            <td><input type="checkbox" checked></td>
+            <td>Pay bills</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>Buy eggs</td>
+        </tr>
+        <tr class="completed">
+            <td><input type="checkbox" checked></td>
+            <td>Organize office</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>Go Green</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>Feed cat</td>
+        </tr>
+        <tr class="completed">
+            <td><input type="checkbox" checked></td>
+            <td>Whiteboard</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>Buy time</td>
+        </tr>
+    </table>
+
+    <h2>Завдання 3</h2>
+    <ol class="panda-list">
+        <li>a red panda is also known as a firefox</li>
+        <li><span class="text-bold">a red panda is also known as a firefox</span></li>
+        <li><span class="text-italic">a red panda is also known as a firefox</span></li>
+        <li><span class="text-red">a red panda is also known as a firefox</span></li>
+    </ol>
+
+</body>
+</html>

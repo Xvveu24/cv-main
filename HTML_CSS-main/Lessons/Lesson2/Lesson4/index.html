@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заняття 4 - Графіка й веб дизайн</title>
+    <link rel="shortcut icon" href="./shared_resources/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #355872;
+            color: #e0e0e0;
+            font-family: 'Nunito', sans-serif;
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 48px 32px;
+            line-height: 1.7;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            font-size: 2.4em;
+            color: #F7F8F0;
+            margin-bottom: 8px;
+            letter-spacing: 0.02em;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #9CD5FF;
+            font-size: 0.85em;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+
+        /* ── divider ── */
+        .divider {
+            width: 60px;
+            height: 3px;
+            background: #9CD5FF;
+            margin: 12px auto 40px;
+            border-radius: 2px;
+        }
+
+        /* ── section label ── */
+        .label {
+            font-size: 0.72em;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: #9CD5FF;
+            margin-bottom: 8px;
+        }
+
+        /* ── cards ── */
+        .card {
+            background-color: #F7F8F0;
+            border-radius: 16px;
+            padding: 24px 28px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+        }
+
+        .card p {
+            color: #355872;
+            font-size: 0.95em;
+            text-align: justify;
+        }
+
+        .card-image {
+            background-color: #F7F8F0;
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+        }
+
+        img {
+            width: 36%;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(53,88,114,0.3);
+            transition: width 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            width: 42%;
+            box-shadow: 0 8px 32px rgba(53,88,114,0.5);
+        }
+
+        /* ── figure ── */
+        figure {
+            background-color: #F7F8F0;
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+        }
+
+        figcaption {
+            margin-top: 12px;
+            color: #7AAACE;
+            font-size: 0.82em;
+            font-style: italic;
+            letter-spacing: 0.04em;
+        }
+
+        /* ── background sample ── */
+        .background-sample {
+            background-image: linear-gradient(120deg, #e63946 0%, #f4a261 50%, #e9c46a 100%);
+            color: #fff;
+            padding: 24px 28px;
+            border-radius: 16px;
+            margin-top: 4px;
+            font-size: 0.95em;
+            line-height: 1.9;
+            font-weight: 600;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.25);
+            box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Відображення</h1>
+    <div class="divider"></div>
+
+    <div class="label">Текст</div>
+    <div class="card">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque veritatis quam saepe consequatur perspiciatis
+            recusandae fuga velit doloremque nobis iure vitae dolore nascunt ex quos, ea quis ipsum excepturi laborum
+            alias! Voluptatibus debitis, quibusdam officiis adipisci quos ratione maiores dolor assumenda minima facilis
+            maxime facere fugit praesentium unde, consequuntur necessitatibus.
+        </p>
+    </div>
+
+    <div class="label">Зображення</div>
+    <div class="card-image">
+        <img src="../Lesson4/resources/color wheel copy.png" alt="color wheel">
+    </div>
+
+    <div class="card-image">
+        <img src=".././Lesson4/shared_resources/color wheelForAll.png" alt="colorwheel">
+    </div>
+
+    <div class="label">Figure</div>
+    <figure>
+        <img src="resources/sunflower.jpg" alt="sunflower by vincent van gogh">
+        <figcaption>Sunflower — Vincent van Gogh</figcaption>
+    </figure>
+
+    <div class="label">Background gradient</div>
+    <div class="background-sample">
+        Lorem ipsum dolor sit,
+        amet consectetur adipisicing elit. Ad facere minus
+        itaque qui eaque incidunt ullam nemo quos similique
+        blanditiis architecto libero ratione quod ipsa, quibusdam
+        exercitationem odio a accusantium?
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Site Structure</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body { font-family: Arial, sans-serif; font-size: 13px; padding: 10px; }
+
+    header, nav, footer {
+      background: #7b3b6e;
+      color: #fff;
+      padding: 14px;
+      margin-bottom: 6px;
+    }
+
+    .wrapper {
+      overflow: hidden;
+      margin-bottom: 6px;
+    }
+
+    aside.left {
+      float: left;
+      width: 15%;
+      margin-right: 6px;
+    }
+
+    aside.left .aside-block {
+      background: #7b3b6e;
+      color: #fff;
+      padding: 14px;
+      margin-bottom: 6px;
+    }
+
+    aside.right {
+      float: right;
+      width: 8%;
+      background: #7b3b6e;
+      color: #fff;
+      padding: 14px;
+      align-self: stretch;
+    }
+
+    main {
+      overflow: hidden;
+      background: #c97fb8;
+      padding: 10px;
+    }
+
+    section {
+      background: #7b3b6e;
+      color: #fff;
+      padding: 14px;
+      margin-bottom: 6px;
+    }
+
+    section:last-child { margin-bottom: 0; }
+  </style>
+</head>
+<body>
+
+  <header>HEADER</header>
+  <nav>MENU</nav>
+
+  <div class="wrapper">
+    <aside class="left">
+      <div class="aside-block">ASIDE 1</div>
+      <div class="aside-block">ASIDE 2</div>
+    </aside>
+
+    <aside class="right">A<br>S<br>I<br>D<br>E<br><br>3</aside>
+
+    <main>
+      MAIN CONTENT
+      <section>SECTION 1</section>
+      <section>SECTION 2</section>
+    </main>
+  </div>
+
+  <footer>FOOTER</footer>
+
+</body>
+</html>

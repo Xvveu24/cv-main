@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #f7f5f2;
+      color: #1a1a1a;
+    }
+
+    .menu {
+      background: #1c3d2e;
+      list-style: none;
+      display: flex;
+    }
+
+    .item { position: relative; }
+
+    .item a {
+      display: block;
+      padding: 14px 22px;
+      color: #d6ead9;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .item:hover > a {
+      background: #132c1f;
+      color: #fff;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #1c3d2e;
+      min-width: 150px;
+      list-style: none;
+    }
+
+    .item:hover > .dropdown { display: block; }
+
+    .dropdown .item a {
+      padding: 11px 20px;
+      text-transform: none;
+      letter-spacing: 0;
+      color: #b8d4bb;
+    }
+
+    .subdropdown {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      background: #1c3d2e;
+      min-width: 150px;
+      list-style: none;
+    }
+
+    .item:hover > .subdropdown { 
+     display: block; 
+    }
+
+    .text {
+     padding: 40px 36px; 
+     max-width: 760px; 
+     font-size: 14px; 
+     line-height: 1.8; 
+     color: #444; 
+    }
+
+  </style>
+  
+</head>
+<body>
+
+  <ul class="menu">
+    <li class="item"><a href="#">Home</a></li>
+    <li class="item">
+      <a href="#">Categories</a>
+      <ul class="dropdown">
+        <li class="item"><a href="#">Man</a></li>
+        <li class="item">
+          <a href="#">Women</a>
+          <ul class="subdropdown">
+            <li class="item"><a href="#">Dress</a></li>
+            <li class="item"><a href="#">Pants</a></li>
+            <li class="item"><a href="#">Shoes</a></li>
+          </ul>
+        </li>
+        <li class="item"><a href="#">Kids</a></li>
+      </ul>
+    </li>
+    <li class="item"><a href="#">About</a></li>
+    <li class="item"><a href="#">Contacts</a></li>
+  </ul>
+
+  <div class="text">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac augue quis ante blandit blandit eu et massa. Integer libero dui, pellentesque id laoreet eu, dignissim non ex. Donec a purus non augue rutrum semper et quis justo. Etiam ultrices ante at elit porttitor malesuada. Morbi feugiat tempus massa non venenatis. Suspendisse id leo eros. Fusce sodales elementum purus, eu rutrum arcu blandit eu.</p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: #1a2e2e;
+            font-family: Georgia, serif;
+            padding: 30px;
+            color: #d4e8e0;
+        }
+
+        p:first-child {
+            background-color: #1e3d3d;
+            color: #a8d4c8;
+            padding: 1.5em;
+            border: 0.6px solid #3a7a72;
+        }
+
+        p:last-child {
+            background-color: #162828;
+            color: #7abfb0;
+            padding: 1.5em;
+            border: 1px solid #2a5a52;
+        }
+
+        p:nth-child(3) {
+            background-color: #1f3838;
+            color: #9ecfc4;
+            padding: 1.2em;
+        }
+
+        p:only-child {
+            background-color: rgb(39, 72, 72);
+            color: bisque;
+            padding: 1.5em;
+        }
+
+        table,
+        td,
+        th {
+            border: 2px solid #3a6060;
+            border-collapse: collapse;
+            padding: 0.5em;
+            color: #c8e8e0;
+        }
+
+        th {
+            background-color: #1e4848;
+        }
+
+        tr:nth-child(even) {
+            background-color: #1a3838;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #162e2e;
+        }
+
+        td:nth-child(odd),
+        th:nth-child(odd) {
+            background-color: #1e4040;
+        }
+
+        p:nth-of-type(2n) {
+            background-color: #3a7a72;
+            color: #7abfb0
+        }
+
+
+        .menu-item:not(:last-child) {
+            border-bottom: #3a7a72 solid 1px;
+            margin-bottom: 10px;
+        }
+
+        #news{
+            display: none;
+        }
+
+        #news:target {
+            display: block;
+            background-color: #162e2e;
+            border: 2px  dotted #3a7a72;
+            padding: 1em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="menu">
+        <li class="menu-item">Main</li>
+        <li class="menu-item">About</li>
+        <li class="menu-item">Prodcuts</li>
+        <li class="menu-item">Contacts</li>
+    </ul>
+
+    <a href="#news"> Read news...</a>
+
+    <article id="news">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum numquam facere, ipsam neque explicabo libero
+        praesentium, perferendis repellendus iure ab, illum culpa nostrum eius voluptatem id nesciunt reiciendis
+        suscipit sequi?
+
+    </article>
+    <div class="div1">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A doloribus nobis porro neque. Cupiditate, quidem.
+            Voluptas expedita saepe sunt qui sapiente quia quibusdam rerum quasi vel. Repellendus facilis numquam alias
+            enim ut dolore possimus, velit fuga laborum aperiam ad adipisci mollitia! Ex cumque explicabo, officia a
+            iste at. Delectus, corrupti!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit deleniti hic laborum odio cumque quos
+            accusamus possimus provident eaque impedit ab, a in suscipit similique, minima unde ipsum beatae temporibus
+            eveniet quaerat? Repellendus est necessitatibus optio consequatur ex sint excepturi? Quisquam recusandae
+            exercitationem, eaque animi eos quae nihil repudiandae nisi dolore, provident, quidem autem maxime molestias
+            odio?</p>
+
+
+        <!-- <img src="/Lesson5/shared_resources/sharedImages/cat.jpeg"> -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptates est saepe provident dolor delectus
+            distinctio, corrupti iure reiciendis sunt natus ut quis, ipsa perferendis. Laborum, ut perspiciatis fuga
+            amet itaque tempora quae, expedita aspernatur recusandae reiciendis accusantium. Neque itaque tempora vitae
+            libero consequatur natus sapiente excepturi eaque odio quasi modi aperiam.</p>
+
+
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore eius porro debitis. Atque pariatur facere
+            alias a dolorem sapiente voluptatum illo non magni labore dignissimos, perspiciatis, corporis quam quo ullam
+            enim! Aspernatur corporis odit ut, ipsam commodi deserunt sunt, tempore sed eaque in praesentium nemo
+            voluptatum?</p>
+    </div>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto deleniti eum corrupti aspernatur autem
+            veritatis? Maiores aliquid eius, at asperiores deleniti quibusdam mollitia nihil. Id voluptate, corrupti quo
+            repellendus pariatur accusamus deleniti autem et quidem ut enim nostrum expedita repudiandae.</p>
+    </div>
+
+    <table>
+        <tr>
+            <th>header1</th>
+            <th>header2</th>
+            <th>header3</th>
+            <th>header4</th>
+        </tr>
+        <tr>
+            <td>data1</td>
+            <td>data2</td>
+            <td>data3</td>
+            <td>data4</td>
+        </tr>
+        <tr>
+            <td>data1</td>
+            <td>data2</td>
+            <td>data3</td>
+            <td>data4</td>
+        </tr>
+        <tr>
+            <td>data1</td>
+            <td>data2</td>
+            <td>data3</td>
+            <td>data4</td>
+        </tr>
+        <tr>
+            <td>data1</td>
+            <td>data2</td>
+            <td>data3</td>
+            <td>data4</td>
+        </tr>
+    </table>
+</body>
+
+</html>

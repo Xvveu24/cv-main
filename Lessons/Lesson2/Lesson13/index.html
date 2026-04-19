@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        form {border: 2px solid black;
+        padding:1.3em;
+    }
+    </style>
+</head>
+<body>
+    <form action="/register" method="post">
+        <h2> Registraton</h2>
+        <label for=""> Username: </label>
+        <input type="text" name = "username" id="username">
+        
+        <br>
+        <label for="email"> E-mail adress: </label>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="passwd"> Password: </label>
+        <input type ="password" name = "password" id ="passwd">
+        <br>
+        <label for="about"> About :</label>
+        <br>
+        <textarea name="about" id="about"></textarea>
+        <br>
+
+        <label for="agree"> Accept license: </label>
+        <input type="checkbox" name="agree" id="agree">
+        <br>
+
+        <fieldset> 
+        <p> Gender</p>
+        <div> 
+            <input type="radio" name="gender" id="genderM" value="male">
+            <label for="genderM"> Male </label>
+            <input type="radio" name="gender" id="genderF" value="female">
+            <label for="genderF"> Female</label>
+            <input type="radio" name="gender" id="genderO" value="other">
+            <label for="genderF"> Other</label>
+        
+
+        </div>
+        </fieldset>
+
+        <label for="fav-pizza"> Favorite pizza: </label>
+        <select name="fav-pizza" id="fav-pizza">
+            <option value="pepperoni"> Pepperoni</option>
+            <option value="margarita"> Margarita</option>
+            <option value="quatro-formaggio"> Quatro formaggio</option>
+        </select>
+
+        <label for="fav-genre"> Favorite genre: </label>
+        <input type="text" name="fav-genre" id="fav-genre" list="genres">
+        <datalist id="genres">
+            <option value="horror"> Horror</option>
+            <option value="action"> Action</option>
+            <option value="drama"> Drama</option>
+        </datalist>
+
+        <br>
+        <label for="birth-day"> Birthday: </label>
+        <input type="date" name="birth-day" id="birth-day">
+
+        <br>
+        <label for="link"> Socials</label>
+        <input type="url" name="link" id="link">
+
+        <br>
+        <label for="tall"> Your height: </label>
+        <input type="number" name="tall" id="tall" min="150" max="200">
+
+        <br>
+        <input type="submit" value="Register">
+    </form>
+
+    <form action="/search" method="get">
+        <h2> Search</h2>
+        <input type="text" name="query">
+        <input type="submit" value="Search" name="" id="">
+        <input type="reset" value="Clear">
+
+    </form>
+    
+</body>
+</html>

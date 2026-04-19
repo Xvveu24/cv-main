@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Footer</title>
+  <style>
+
+    * { 
+     box-sizing: border-box; 
+     margin: 0; 
+     padding: 0; 
+    }
+
+    body { 
+     font-family: Arial, sans-serif; 
+    }
+
+    footer { background: #e8e8e8; 
+     padding: 30px 40px 10px; 
+    }
+
+    .footer-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 40px;
+      margin-bottom: 20px;
+    }
+
+    .col a {
+      display: block;
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+
+    .col a:hover { 
+     text-decoration: underline; 
+    }
+
+    .socials { 
+     margin-left: auto; 
+     display: flex; 
+     gap: 8px; 
+     align-items: center; 
+    }
+
+    .socials a img { 
+     width: 40px; 
+     height: 40px; 
+    }
+
+    .socials a .hover { display: 
+     none; 
+    }
+
+    .socials a:hover .normal { 
+     display: none; 
+    }
+
+    .socials a:hover .hover { 
+     display: block; 
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #ccc;
+      padding-top: 10px;
+      text-align: center;
+      font-size: 12px;
+      color: #666;
+    }
+
+  </style>
+</head>
+<body>
+
+  <footer>
+    <div class="footer-top">
+
+      <div class="col">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Gallery</a>
+        <a href="#">News</a>
+      </div>
+
+      <div class="col">
+        <a href="#">Blog</a>
+        <a href="#">FAQ</a>
+        <a href="#">Contacts</a>
+        <a href="#">Privacy &amp; cookies</a>
+      </div>
+
+      <div class="socials">
+
+        <a href="#">
+          <img class="normal" src="fb_gray.png" alt="Facebook">
+          <img class="hover" src="fb.png" alt="Facebook">
+        </a>
+
+        <a href="#">
+          <img class="normal" src="insta_gray.png" alt="Instagram">
+          <img class="hover" src="insta.png" alt="Instagram">
+        </a>
+
+        <a href="#">
+          <img class="normal" src="youtube_gray.png" alt="YouTube">
+          <img class="hover" src="youtube.png" alt="YouTube">
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      Copyright &copy; Company 2018 - 2019
+    </div>
+
+  </footer>
+
+</body>
+</html>

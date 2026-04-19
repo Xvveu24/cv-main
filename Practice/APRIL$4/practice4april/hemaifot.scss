@@ -1,0 +1,43 @@
+$backgound-color: #2596be;
+$color: #e9e2e2;
+
+body {
+    background-color: $color;
+}
+
+.container{
+    width:100vw;
+    min-width: 320px;
+    max-width: 1600px;
+    margin: auto;
+    min-height: 100vw;
+    display:flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: #007acc;
+    flex-basis: 10vw;
+    display: flex;
+    
+    justify-content: center;
+    color: beige;
+}
+
+main{
+    min-width: 320px;
+    max-width: 160px;
+    min-height: 50vw;
+    color: #201f1f;
+    size: 1.3em;
+    
+}
+
+footer{
+    background-color: #005c99;
+    flex-basis: 5vw;
+
+    display: flex;
+    justify-content: center;
+    color: beige;
+}

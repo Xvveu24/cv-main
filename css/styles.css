@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: none;
+}
+
+body {
+  background-color: #816ab8;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.3em;
+}
+
+.container {
+  min-width: 500px;
+  width: 80vw;
+  margin: auto;
+  text-align: center;
+  border: solid black 2px;
+}
+
+nav {
+  background-color: rgb(69.4318181818, 52.4431818182, 110.0568181818);
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}/*# sourceMappingURL=styles.css.map */

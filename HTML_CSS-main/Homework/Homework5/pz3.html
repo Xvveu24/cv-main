@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Floating Icons</title>
+  <style>
+    * { 
+     box-sizing: border-box; 
+     margin: 0; 
+     padding: 0; 
+    }
+
+    body { 
+     background: #fef9c3; 
+     font-family: Arial, sans-serif; 
+    }
+
+    h1 { 
+     text-align: center; 
+     padding: 30px; 
+     font-size: 22px; 
+     letter-spacing: 2px; 
+    }
+
+    .scene {
+      position: relative;
+      width: 500px;
+      height: 300px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .scene img {
+      position: absolute;
+      width: 100px;
+      animation: rise 2s ease-out forwards;
+    }
+
+    @keyframes rise {
+      from { transform: translateY(300px); }
+      to   { transform: translateY(0); }
+    }
+
+    .calc   { left: 20px;  top: 100px; animation-delay: 0s; }
+    .book   { left: 150px; top: 40px;  animation-delay: 0.5s; }
+    .paper  { left: 260px; top: 50px;  animation-delay: 1s; }
+    .pallete{ left: 370px; top: 80px;  animation-delay: 1.5s; }
+    .pencil { left: 200px; top: 180px; animation-delay: 2s; }
+
+    
+    .scene img { transform: translateY(300px); }
+
+  </style>
+</head>
+<body>
+
+  <h1>HELLO MY SITE!</h1>
+
+  <div class="scene">
+    <img class="calc" src="calc.png" alt="calc">
+    <img class="book" src="book.png" alt="book">
+    <img class="paper" src="paper.png" alt="paper">
+    <img class="pallete" src="pallete.png" alt="pallete">
+    <img class="pencil" src="pencil.png" alt="pencil">
+  </div>
+
+</body>
+</html>

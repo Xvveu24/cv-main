@@ -1,0 +1,91 @@
+@import "_variables:";
+@import "_reset";
+
+$color: #816ab8;
+$font : Helvetica, sans-serif;
+$minWidth : 500px;
+$fontSize: 1.3em;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+}
+
+body {
+    background-color: $color;
+    font-family: $font;
+    font-size: $fontSize;
+}
+
+.container {
+    @include mixin;
+    min-width: $minWidth;
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+    border: { 
+        style :solid ;
+        color: black;
+         width: 2px;
+         radius:10px
+    } 
+
+}
+
+nav {
+    background-color: darken($color, 25%);
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li {
+        display: inline-block;
+    }
+    a{
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+    }
+}
+
+@mixin important-text {
+    color : red;
+    font: {
+        size: 2em;
+        weight: bold;
+        
+    }
+    text-transform: uppercase;
+}
+
+.danger {
+    @include important-text;
+    background-color: darken($color, 10%);
+}
+
+
+p {
+    background-color: mix( blue, cadetblue , white);
+}
+
+.button-basic{
+    border: none;
+    padding: 15px 38px;
+    text-align: center;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.button-report{
+    @extend .button-basic;
+    background-color: red;
+}
+
+.button-submit{
+    @extend .button-submit;
+    background-color: green;
+    color: whitesmoke;
+}

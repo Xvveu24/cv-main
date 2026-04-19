@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+
+        table, td, th {
+            border: 1px solid #999;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            padding: 10px 14px;
+        }
+
+        thead {
+            background-color: #488b9e;
+            color: white;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #dceef2;
+        }
+
+        tfoot {
+            background-color: #2c6b7a;
+            color: white;
+            font-style: italic;
+        }
+
+        table {
+            margin: 20px 0;
+        }
+
+        .avatar {
+            width: 40px;
+            border-radius: 50%;
+        }
+
+        td:first-child {
+            text-align: center;
+        }
+
+        caption {
+            background-color: chocolate;
+            color: white;
+            padding: 6px;
+            font-weight: bold;
+        }
+
+        .hide-empty {
+            border-collapse: separate;
+            empty-cells: hide;
+        }
+    </style>
+</head>
+<body>
+
+
+    <table>
+        <caption>Users</caption>
+        <colgroup>
+            <col style="width: 80px;">
+            <col>
+            <col>
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th>Avatar</th>
+                <th>Name</th>
+                <th>E-mail</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><img src="../Lesson4/shared_resources/color wheelForAll.png" alt="avatar" class="avatar"></td>
+                <td>John Dru</td>
+                <td><a href="mailto:emailexample@gmail.com">emailexample@gmail.com</a></td>
+            </tr>
+            <tr>
+                <td><img src="../Lesson4/shared_resources/color wheelForAll.png" alt="avatar" class="avatar"></td>
+                <td>John Dru</td>
+                <td><a href="mailto:emailexample@gmail.com">emailexample@gmail.com</a></td>
+            </tr>
+            <tr>
+                <td><img src="../Lesson4/shared_resources/color wheelForAll.png" alt="avatar" class="avatar"></td>
+                <td>John Dru</td>
+                <td><a href="mailto:emailexample@gmail.com">emailexample@gmail.com</a></td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Це футер таблиці</td>
+            </tr>
+        </tfoot>
+    </table>
+
+   
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>43</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>57</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Це футер таблиці</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Contact Info</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>Name</th>
+                <td>Jill</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Phone</th>
+                <td>555-1234</td>
+            </tr>
+            <tr>
+                <td>555-5967</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="2">Це футер таблиці</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    
+    <table class="hide-empty">
+        <thead>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Lorem ipsum dolor sit amet consectetur.</td>
+                <td>Lorem, ipsum.</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Lorem ipsum, dolor sit amet consectetur adipisicing.</td>
+                <td></td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Це футер таблиці</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

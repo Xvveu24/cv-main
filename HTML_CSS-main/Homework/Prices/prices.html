@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Pricing</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    width: 220px;
+    background: #fff;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* HEADER AREA */
+.header {
+    padding: 15px 0 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* separator line (THIS IS THE FIX) */
+.line {
+    height: 3px;
+    width: 60px;
+    margin: 0 auto 10px;
+}
+
+/* PRICE */
+.price {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.month {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 15px;
+}
+
+/* FEATURES */
+.features {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.8;
+    padding: 10px 20px;
+}
+
+/* BUTTON */
+button {
+    margin: 15px 0 20px;
+    padding: 10px 25px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+/* COLORS */
+.enterprise .line, .enterprise button { background: #d64545; }
+.professional .line, .professional button { background: #e09b3d; }
+.standard .line, .standard button { background: #2b6f9e; }
+.basic .line, .basic button { background: #4caf50; }
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card enterprise">
+        <div class="header">ENTERPRISE</div>
+        <div class="line"></div>
+        <div class="price">$69</div>
+        <div class="month">per month</div>
+        <div class="features">
+            10GB disk space<br>
+            100GB monthly bandwidth<br>
+            20 email accounts<br>
+            Unlimited subdomains
+        </div>
+        <button>BUY</button>
+    </div>
+
+    <div class="card professional">
+        <div class="header">PROFESSIONAL</div>
+        <div class="line"></div>
+        <div class="price">$29</div>
+        <div class="month">per month</div>
+        <div class="features">
+            5GB disk space<br>
+            60GB monthly bandwidth<br>
+            10 email accounts<br>
+            Unlimited subdomains
+        </div>
+        <button>BUY</button>
+    </div>
+
+    <div class="card standard">
+        <div class="header">STANDARD</div>
+        <div class="line"></div>
+        <div class="price">$19</div>
+        <div class="month">per month</div>
+        <div class="features">
+            3GB disk space<br>
+            30GB monthly bandwidth<br>
+            5 email accounts<br>
+            Unlimited subdomains
+        </div>
+        <button>BUY</button>
+    </div>
+
+    <div class="card basic">
+        <div class="header">BASIC</div>
+        <div class="line"></div>
+        <div class="price">$9</div>
+        <div class="month">per month</div>
+        <div class="features">
+            1GB disk space<br>
+            10GB monthly bandwidth<br>
+            2 email accounts<br>
+            Unlimited subdomains
+        </div>
+        <button>BUY</button>
+    </div>
+
+</div>
+
+</body>
+</html>
