@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .nav {
+      width: 150px;
+      background: #222;
+      flex-shrink: 0;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+    }
+
+    .nav-logo {
+      padding: 16px;
+      text-align: center;
+    }
+
+    .nav-logo img {
+      width: 40px;
+    }
+
+    .nav-item {
+      padding: 12px 16px;
+      color: #aaa;
+      font-size: 12px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      border-bottom: 1px solid #333;
+    }
+
+    .nav-item:hover, .nav-item.active {
+      color: #fff;
+      background: #333;
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    .head {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+
+    .grafiki {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    .graf {
+      flex: 1;
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 14px;
+    }
+
+    .graf-name {
+      font-size: 11px;
+      font-weight: bold;
+      color: #555;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    .graf img {
+      width: 100%;
+      display: block;
+    }
+
+    .tabl {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 14px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    th {
+      text-align: left;
+      padding: 8px 10px;
+      border-bottom: 1px solid #ddd;
+      color: #555;
+      font-size: 12px;
+    }
+
+    td {
+      padding: 8px 10px;
+      border-bottom: 1px solid #f0f0f0;
+      color: #333;
+    }
+
+    @media (max-width: 599px) {
+      body {
+        flex-direction: column;
+      }
+
+      .nav {
+        width: 100%;
+        height: auto;
+        position: static;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      .nav-logo {
+        padding: 10px;
+      }
+
+      .nav-item {
+        border-bottom: none;
+        border-right: 1px solid #333;
+        padding: 10px 14px;
+      }
+
+      .grafiki {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-logo">
+      <img src="six_seven/logo.png" alt="logo">
+    </div>
+    <div class="nav-item active">DASHBOARD</div>
+    <div class="nav-item">USERS</div>
+    <div class="nav-item">FILE MANAGER</div>
+    <div class="nav-item">POSTS</div>
+    <div class="nav-item">EVENTS</div>
+  </nav>
+
+  <div class="content">
+    <div class="head">Dashboard - May 25, 2019</div>
+
+    <div class="grafiki">
+      <div class="graf">
+        <div class="graf-name">TRAFFIC</div>
+        <img src="six_seven//chart1.png" alt="traffic">
+      </div>
+      <div class="graf">
+        <div class="graf-name">LOADS</div>
+        <img src="six_seven//chart2.png" alt="loads">
+      </div>
+    </div>
+
+    <div class="tabl">
+      <div class="graf-name">RECENT ACTIVITY</div>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Etiam eu erat sit amet nisl eleifend aliquam</td>
+            <td>Phoebe Britton</td>
+            <td>25/05/19</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Ut maximus lacus ut ante tristique, et rutrum leo eleifend</td>
+            <td>Rosina Clay</td>
+            <td>25/05/19</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Donec eget ligula sed diam pharetra sodales eget a metus</td>
+            <td>Ayush Horn</td>
+            <td>24/05/19</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Curabitur bibendum odio in velit pretium luctus</td>
+            <td>Jillian Carver</td>
+            <td>23/05/19</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</body>
+</html>

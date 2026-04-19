@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      padding: 20px;
+    }
+
+    .wrp {
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      gap: 20px;
+    }
+
+    .statya {
+      flex: 1;
+    }
+
+    .statya h2 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .statya p {
+      font-size: 13px;
+      line-height: 1.6;
+      color: #333;
+      margin-bottom: 14px;
+    }
+
+    .sidebar {
+      width: 200px;
+      flex-shrink: 0;
+    }
+
+    .sb-blok {
+      margin-bottom: 14px;
+    }
+
+    .sb-head {
+      background: #4a7abf;
+      color: #fff;
+      font-size: 13px;
+      font-weight: bold;
+      padding: 6px 10px;
+      margin-bottom: 2px;
+    }
+
+    .sb-item {
+      background: #e8f0fb;
+      font-size: 12px;
+      padding: 6px 10px;
+      border-bottom: 1px solid #d0dff5;
+      color: #333;
+    }
+
+    @media (min-width: 600px) and (max-width: 799px) {
+      .wrp {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        display: flex;
+        gap: 16px;
+      }
+
+      .sb-blok {
+        flex: 1;
+        margin-bottom: 0;
+      }
+    }
+
+    @media (max-width: 599px) {
+      .wrp {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrp">
+    <div class="statya">
+      <h2>Introduction</h2>
+      <p>Aenean dictum elit sapien, et tempor leo malesuada eget. Praesent sed metus laoreet lacus suscipit auctor in id turpis. Nullam a sapien quis urna tincidunt hendrerit. Nulla consectetur varius diam, et tincidunt velit ullamcorper ac. Sed rhoncus tempus tortor, at ornare nisi gravida at. Duis purus urna, tempor non posuere sed, ultrices ut tortor. Nullam pellentesque mi ut vehicula sagittis. In vel luctus tortor. Vivamus luctus, tellus ac bibendum scelerisque, leo leo lacinia ipsum, vitae aliquet velit enim lobortis erat. Quisque dictum a dolor vel condimentum. Phasellus vel lectus erat. Sed congue nec ex eget varius. Suspendisse ultrices tortor eu porttitor hendrerit.</p>
+
+      <h2>Additional information</h2>
+      <p>Duis sed pharetra odio. Donec luctus posuere nibh, eget posuere nisl varius vel. Maecenas urna ante, facilisis id libero ut, vestibulum tristique lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque elit massa, dapibus et metus nec, lacinia lacinia diam. Aliquam id efficitur purus. Sed facilisis dolor ac enim ornare pretium. Nulla fermentum nisl eget ligula condimentum, ut dictum felis faucibus. Suspendisse urna purus, pretium sit amet vehicula nec, ullamcorper non tortor.</p>
+
+      <p>Aenean non placerat eros. Aliquam consequat quis lorem non vulputate. Mauris urna magna, porttitor eget posuere nec, dictum at mi. Aenean ornare libero in est laoreet, sit amet sodales enim bibendum. Etiam est ante, hendrerit sed efficitur vel, porttitor sed lacus. Nunc ipsum lectus, iaculis eget mauris nec, viverra pretium justo. Duis a turpis volutpat elit vulputate porttitor porta eu augue.</p>
+    </div>
+
+    <div class="sidebar">
+      <div class="sb-blok">
+        <div class="sb-head">Actions</div>
+        <div class="sb-item">Integer ut magna cursus eros</div>
+        <div class="sb-item">Fusce imperdiet sapien a sem</div>
+        <div class="sb-item">Sed ac ligula in neque tincidunt</div>
+      </div>
+      <div class="sb-blok">
+        <div class="sb-head">Plans</div>
+        <div class="sb-item">Morbi at diam suscipit mauris</div>
+        <div class="sb-item">Donec vel odio malesuada</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
