@@ -1,123 +1,1060 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
     <style>
-
-        img {
-            width: 60%;
-            
-            
-            /* float: left; */
-         
+        body {
+            background: #1a1d23;
+            font-family: sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
         }
 
-            
-
-           
-        
-        body{
-            background-color: #111;
-            
-            
-        }
-        ul{
-            list-style-type:none;
-           
-            overflow: hidden;
-            background-color: #333;
-            border-radius: 6px;
-        }
-
-        ul li{
-            float:left;
-        }
-
-        ul li{
-            display:block;
-            color:white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        ul li a:hover{
-            background-color: #111;
-        }
-
-        .store{
-            text-align: center;
-            
-            justify-content: center;
-            align-items: center;
-
-            border: 5px solid white;
-            width: 225px;
-            padding: 10px;
-            margin: 10px;
-            
-        }
-
-        p{
-            color: white;
-            margin-top: 10px;
-        }
-
-        h1{
-            color:white;
-            margin-top: 10px;
-        }
-
-        .catalog{
+        .top-menu {
             display: flex;
-            
+            gap: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #333;
+            margin-bottom: 30px;
+        }
 
+        .top-menu a {
+            color: #bbb;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .main-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .search-box {
+            padding: 7px 15px;
+            border-radius: 20px;
+            border: 1px solid #444;
+            background: #2a2d34;
+            color: #fff;
+            outline: none;
+        }
+
+        .items-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            width: 100%;
+        }
+
+        .tovar-card {
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 12px;
+            padding: 15px;
+            width: 240px; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .tovar-img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .tovar-name {
+            font-size: 18px;
+            margin: 5px 0;
+            text-align: center;
+        }
+
+        .tovar-text {
+            font-size: 13px;
+            color: #ccc;
+            text-align: center;
+            margin-bottom: 15px;
+            min-height: 40px;
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+
+        .price-tag {
+            font-weight: bold;
+            border-bottom: 1px solid #fff;
+        }
+
+        .stars {
+            color: #ffcc00;
+            font-size: 13px;
+        }
+
+        .btn-buy {
+            width: 100%;
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            background: #2d7a2d;
+            color: #fff;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
 
-    <ul>
-        <li>Home</li>
-        <li><u>Store</u></li>
-        <li>Contact</li>
-        <li>About</li>
-        <li>Lorem</li>
-        <li>Lorem</li>
-        <li>Lorem</li>
-        <li>Lorem</li>
+    <div class="top-menu">
+        <a href="#">Home</a>
+        <a href="#">Store</a>
+        <a href="#">New Arrivals</a>
+        <a href="#">Best Sellers</a>
+        <a href="#">Sale</a>
+    </div>
 
-    </ul>
-<div class="catalog">
- <div class="store">
-        <img src="../Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" alt="img">
-        <h1>Nazva</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptatibus, repellendus dicta aliquid expedita totam.</p>
-        <p><u>100$</u></p>
-</div>
+    <div class="main-head">
+        <h1 style="margin:0">STORE</h1>
+        <input type="text" class="search-box" placeholder="Поиск...">
+    </div>
 
- <div class="store">
-        <img src="../Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" alt="img">
-        <h1>Nazva</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptatibus, repellendus dicta aliquid expedita totam.</p>
-        <p><u>100$</u></p>
-</div>
+    <p style="color:#777">choose a product from our collection</p>
 
- <div class="store">
-        <img src="../Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" alt="img">
-        <h1>Nazva</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptatibus, repellendus dicta aliquid expedita totam.</p>
-        <p><u>100$</u></p>
-</div>
+    <div class="items-wrapper">
+        
+        <div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">Aqua-Vita Serum</h3>
+            <p class="tovar-text">Premium hydrating facial serums.</p>
+            <div class="info-row">
+                <span class="price-tag">1000 грн</span>
+                <span class="stars">4.8 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div>
 
-</div>
+        <div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">Aura-Silk Tincture</h3>
+            <p class="tovar-text">Facial night cream duo.</p>
+            <div class="info-row">
+                <span class="price-tag">1200 грн</span>
+                <span class="stars">5.0 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div>
 
+        <div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">Product Name</h3>
+            <p class="tovar-text">Some cool description here.</p>
+            <div class="info-row">
+                <span class="price-tag">950 грн</span>
+                <span class="stars">4.9 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div>
 
-    
+        <div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div>
 
-    
+        <div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div>
+
+        <div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div>
+
+        <div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div>
+
+        <div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div>
+        <div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div><div class="tovar-card">
+            <img src="/Lessons/Lesson2/Lesson4/shared_resources/OIP.webp" class="tovar-img">
+            <h3 class="tovar-name">New Item</h3>
+            <p class="tovar-text">Another product description.</p>
+            <div class="info-row">
+                <span class="price-tag">1100 грн</span>
+                <span class="stars">4.7 ★</span>
+            </div>
+            <button class="btn-buy">Додати в кошик</button>
+        </div>
+
+    </div>
+
 </body>
 </html>
